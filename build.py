@@ -1,5 +1,6 @@
 import os, shutil
 import sys
+from subprocess import call
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -25,7 +26,7 @@ def build():
 
     # render templates
     for root, dirs, files in os.walk(PAGES_DIR):
-        
+
         sroot = root.split(os.sep)
         for d in dirs:
             os.mkdir(os.path.join(*([BUILD_DIR]+sroot[len(sPAGES_DIR):]+[d])))
@@ -56,6 +57,10 @@ def build():
                     except:
                         print 'ERROR: %s'%os.path.join(root, template)
                         raise
+
+    # Build LESS
+    print 'Compiling LESS to CSS'
+    call(['lessc', 'static/less/freelancer.less', 'static/css/freelancer.css'])
 
     # copy static files
     print 'Copying static files'

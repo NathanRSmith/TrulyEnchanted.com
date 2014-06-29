@@ -23,7 +23,7 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: @primary-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -43,8 +43,8 @@ hr.star-primary:after {
     content: "\f005";
     font-family: FontAwesome;
     display: inline-block;
-    position: relative; 
-    top: -0.8em;  
+    position: relative;
+    top: -0.8em;
     font-size: 2em;
     padding: 0 0.25em;
 }
@@ -86,8 +86,8 @@ header {
 	.intro-text {
 		.name {
 			display: block;
-			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			text-transform: uppercase;
+			font-family: @brand-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			// text-transform: uppercase;
 			font-weight: 700;
 			font-size: 2em;
 		}
@@ -125,18 +125,18 @@ header {
 	        -webkit-transition: all 0.3s;
 	        -moz-transition: all 0.3s;
 	        transition: all 0.3s;
-	    }        
+	    }
     }
     .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
 		.navbar-brand {
 	        font-size: 1.5em;
-	    }    
+	    }
 	}
 }
 
 .navbar {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: @primary-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	a:focus {
@@ -216,8 +216,8 @@ section.success {
                     h4 {
                         margin: 0;
                     }
-                }                
-            }            
+                }
+            }
         }
     }
     * {
@@ -414,7 +414,7 @@ footer {
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
                 z-index:1052;
-            }            
-        }        
+            }
+        }
     }
 }
