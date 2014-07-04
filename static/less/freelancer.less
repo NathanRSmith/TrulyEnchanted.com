@@ -3,6 +3,7 @@
 
 body {
 	overflow-x: hidden;
+	font-family: @primary-font,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 p {
@@ -136,7 +137,7 @@ header {
 }
 
 .navbar {
-	font-family: @primary-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: @nav-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	a:focus {
@@ -155,6 +156,12 @@ header {
 .navbar-default,
 .navbar-inverse {
 	border: none;
+}
+.navbar-default {
+	background-color: @nav-background-color;
+}
+.navbar-nav>li>a {
+	font-family: @primary-font;
 }
 
 section {
