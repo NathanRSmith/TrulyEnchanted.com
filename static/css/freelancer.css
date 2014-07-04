@@ -377,3 +377,16 @@ footer .footer-below {
   /* Safari and Chrome */
   z-index: 1052;
 }
+.portfolio-preview {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.portfolio-preview img {
+  width: 62%;
+}
+.character-belle .portfolio-preview {
+  background-color: #e8b962;
+}
+.character-ariel .portfolio-preview {
+  background-color: #b56586;
+}
