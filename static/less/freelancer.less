@@ -30,7 +30,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr.star-light,
-hr.star-primary {
+hr.star-primary,
+hr.star-secondary {
     padding: 0;
     border: none;
     border-top: solid 5px;
@@ -39,9 +40,11 @@ hr.star-primary {
     margin: 25px auto 30px;
 }
 
+
 hr.star-light:after,
-hr.star-primary:after {
-    content: "\f005";
+hr.star-primary:after,
+hr.star-secondary:after {
+    content: "\f004";
     font-family: FontAwesome;
     display: inline-block;
     position: relative;
@@ -66,6 +69,15 @@ hr.star-primary {
 hr.star-primary:after {
     background-color: white;
     color: @brand-primary;
+}
+
+hr.star-secondary {
+    border-color: white;
+}
+
+hr.star-secondary:after {
+    background-color: @purple;
+    color: white;
 }
 
 .img-centered {
@@ -93,7 +105,8 @@ header {
 			font-size: 2em;
 		}
 		.skills {
-			font-size: 1.25em;
+			font-family: @brand-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 2em;
 			font-weight: 300;
 		}
 	}
@@ -102,14 +115,14 @@ header {
 @media(min-width:768px) {
 	header {
 		.container {
-			padding: 200px 0 100px;
+			padding: 160px 0 100px;
 		}
 		.intro-text {
 			.name {
 				font-size: 5em;
 			}
 			.skills {
-				font-size: 1.75em;
+				font-size: 2.75em;
 			}
 		}
 	}
@@ -122,7 +135,7 @@ header {
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
 	    .navbar-brand {
-	        font-size: 2em;
+	        font-size: 1.25em;
 	        -webkit-transition: all 0.3s;
 	        -moz-transition: all 0.3s;
 	        transition: all 0.3s;
@@ -131,8 +144,22 @@ header {
     .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
 		.navbar-brand {
-	        font-size: 1.5em;
+	        font-size: 1em;
 	    }
+	}
+}
+
+@media(min-width:992px) {
+	.navbar-fixed-top {
+		.navbar-brand {
+			font-size: 2em;
+		}
+	}
+	.navbar-fixed-top.navbar-shrink {
+		padding: 10px 0;
+		.navbar-brand {
+			font-size: 1.5em;
+		}
 	}
 }
 
@@ -177,6 +204,11 @@ section.success {
 	color: white;
 }
 
+section.secondary {
+	background: @purple;
+	color: white;
+}
+
 @media(max-width:767px) {
 	section {
 		padding: 75px 0;
@@ -186,7 +218,7 @@ section.success {
 	}
 }
 
-#portfolio {
+#packages {
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
@@ -195,6 +227,10 @@ section.success {
             position: relative;
             max-width: 400px;
             margin: 0 auto;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
             .caption {
                 background: fade(@brand-success, 90%);
                 position: absolute;
@@ -426,8 +462,22 @@ footer {
     }
 }
 
+
+.brand-font {
+	font-family: @brand-font;
+}
+.primary-font {
+	font-family: @primary-font;
+}
+
+.portfolio-preview .title {
+	font-size: 2em;
+	font-family: @brand-font;
+	color: white;
+	text-align: center;
+}
 .portfolio-preview {
-	padding-top: 5%;
+	padding-top: 2%;
 	padding-bottom: 5%;
 }
 .portfolio-preview img {
@@ -438,4 +488,14 @@ footer {
 }
 .character-ariel .portfolio-preview {
 	background-color: @purple;
+}
+
+
+#about {
+
+}
+
+#faq {
+	background: @brand-success;
+	color: white;
 }

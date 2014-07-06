@@ -50,10 +50,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#characters">Characters</a>
+                        <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#characters">Characters</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#packages">Packages</a>
@@ -75,77 +75,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive img-circle" src="{{ media }}img/belle_square.jpg" alt="">    <!-- TODO: Replace with carousel -->
                     <div class="intro-text">
-                        <span class="name">Truly Enchanted Entertainment<br/>Michiana</span>
-                        <hr class="star-light">
-                        <span class="skills">Providing Party Princess Services to the Michiana Area</span>
+                        <span class="name">Truly Enchanted Entertainment Michiana</span>
+                        <img class="img-responsive img-circle" src="{{ media }}img/belle_square.jpg" alt="">    <!-- TODO: Replace with carousel -->
+                        <span class="skills">"Today’s special moments are tomorrow’s memories"</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="characters">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Meet the Characters</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 portfolio-item character-belle">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <div class="portfolio-preview">
-                            <img class="img-responsive img-circle center-block" src="{{ media }}img/belle_square.jpg" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 portfolio-item character-ariel">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <div class="portfolio-preview">
-                            <img class="img-responsive img-circle center-block" src="{{ media }}img/ariel_square.jpg" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <section class="secondary" id="about">
+        {% include 'components/about.html' %}
     </section>
 
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
-                </div>
-            </div>
-        </div>
+    <section id="packages">
+        {% include "components/packages.html" %}
     </section>
+
+    <section id="faq">
+        {% include "components/faq.html" %}
+    </section>
+
+
 
     <section id="contact">
         <div class="container">
@@ -200,16 +152,16 @@
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/TrulyEnchantedMichiana" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            <!-- <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
                             </li>
                             <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                             </li>
                             <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                             <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
@@ -223,7 +175,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; 2014 - Your Name
+                        Copyright &copy; 2014 - Truly Enchanted Entertainment Michiana
                     </div>
                 </div>
             </div>
