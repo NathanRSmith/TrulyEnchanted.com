@@ -218,45 +218,24 @@ section.secondary {
   margin: 0 0 15px;
   right: 0;
 }
-#characters .portfolio-item .portfolio-link {
-  display: block;
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
-  text-decoration: none;
-}
-#characters .portfolio-item .portfolio-link:hover {
-  text-decoration: none;
-}
-#characters .portfolio-item .portfolio-link .caption {
-  background: rgba(224, 89, 109, 0.9);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-}
-#characters .portfolio-item .portfolio-link .caption:hover {
-  opacity: 1;
-}
-#characters .portfolio-item .portfolio-link .caption .caption-content {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  font-size: 20px;
-  text-align: center;
-  top: 50%;
-  margin-top: -12px;
+#characters .portfolio-preview .title {
+  font-size: 2em;
+  font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
+  text-align: center;
 }
-#characters .portfolio-item .portfolio-link .caption .caption-content i {
-  margin-top: -12px;
+#characters .portfolio-preview {
+  padding-top: 2%;
+  padding-bottom: 5%;
 }
-#characters .portfolio-item .portfolio-link .caption .caption-content h3,
-#characters .portfolio-item .portfolio-link .caption .caption-content h4 {
-  margin: 0;
+#characters .portfolio-preview img {
+  width: 62%;
+}
+#characters .character-belle .portfolio-preview {
+  background-color: #e8b962;
+}
+#characters .character-ariel .portfolio-preview {
+  background-color: #b56586;
 }
 #characters * {
   z-index: 2;
@@ -442,25 +421,6 @@ footer .footer-below {
 .primary-font {
   font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.portfolio-preview .title {
-  font-size: 2em;
-  font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  text-align: center;
-}
-.portfolio-preview {
-  padding-top: 2%;
-  padding-bottom: 5%;
-}
-.portfolio-preview img {
-  width: 62%;
-}
-.character-belle .portfolio-preview {
-  background-color: #e8b962;
-}
-.character-ariel .portfolio-preview {
-  background-color: #b56586;
-}
 #packages .title {
   font-size: 2em;
   font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -470,7 +430,58 @@ footer .footer-below {
 #packages .activities-title {
   font-size: 1.5em;
 }
+.personnel-item {
+  text-align: left;
+}
+.personnel-item img {
+  margin-bottom: 0;
+  width: 11em;
+}
+.personnel-item .title {
+  font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.75em;
+}
+#about_jessica img {
+  margin-right: 8px;
+}
+#about_nathan img {
+  margin-left: 8px;
+}
 #faq {
   background: #e0596d;
   color: white;
+}
+#faq dl dt {
+  font-size: 1.3em;
+}
+#faq dl dd {
+  margin-bottom: 15px;
+}
+#contact .contact-method {
+  text-align: center;
+}
+#contact .contact-method .title {
+  font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  color: black;
+}
+#contact .contact-method .content-container {
+  color: black;
+}
+#contact .contact-phone .contact-container .content {
+  font-size: 3em;
+}
+#contact .contact-phone .contact-container .content a {
+  color: black;
+}
+#contact .contact-form .contact-container .content a {
+  font-size: 1.3em;
+  margin-top: .2em;
+  margin-bottom: .6em;
+}
+#contact .contact-other .content {
+  font-size: 3em;
+}
+#contact .contact-other .content a {
+  color: black;
 }

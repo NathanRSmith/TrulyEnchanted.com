@@ -233,47 +233,28 @@ section.secondary {
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
-        .portfolio-link {
-            display: block;
-            position: relative;
-            max-width: 400px;
-            margin: 0 auto;
-			text-decoration: none;
-			&:hover {
-				text-decoration: none;
-			}
-            .caption {
-                background: fade(@brand-success, 90%);
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                opacity: 0;
-                transition: all ease 0.5s;
-                -webkit-transition: all ease 0.5s;
-                -moz-transition: all ease 0.5s;
-                &:hover {
-                    opacity: 1;
-                }
-                .caption-content {
-                    position: absolute;
-                    width: 100%;
-                    height: 20px;
-                    font-size: 20px;
-                    text-align: center;
-                    top: 50%;
-                    margin-top: -12px;
-                    color: white;
-                    i {
-                        margin-top: -12px;
-                    }
-                    h3,
-                    h4 {
-                        margin: 0;
-                    }
-                }
-            }
-        }
     }
+
+	.portfolio-preview .title {
+		font-size: 2em;
+		font-family: @brand-font;
+		color: white;
+		text-align: center;
+	}
+	.portfolio-preview {
+		padding-top: 2%;
+		padding-bottom: 5%;
+	}
+	.portfolio-preview img {
+		width: 62%;
+	}
+	.character-belle .portfolio-preview {
+		background-color: @gold;
+	}
+	.character-ariel .portfolio-preview {
+		background-color: @purple;
+	}
+
     * {
         z-index: 2;
     }
@@ -481,26 +462,6 @@ footer {
 	font-family: @primary-font;
 }
 
-.portfolio-preview .title {
-	font-size: 2em;
-	font-family: @brand-font;
-	color: white;
-	text-align: center;
-}
-.portfolio-preview {
-	padding-top: 2%;
-	padding-bottom: 5%;
-}
-.portfolio-preview img {
-	width: 62%;
-}
-.character-belle .portfolio-preview {
-	background-color: @gold;
-}
-.character-ariel .portfolio-preview {
-	background-color: @purple;
-}
-
 #packages {
 	.title {
 		font-size: 2em;
@@ -514,6 +475,29 @@ footer {
 	}
 }
 
+.personnel-item {
+	text-align: left;
+
+	img {
+		margin-bottom: 0;
+		width: 11em;
+	}
+	.title {
+		font-family: @brand-font;
+		font-size: 2.75em;
+	}
+}
+#about_jessica {
+	img {
+		margin-right: 8px;
+	}
+}
+#about_nathan {
+	img {
+		margin-left: 8px;
+	}
+}
+
 #about {
 
 }
@@ -521,4 +505,67 @@ footer {
 #faq {
 	background: @brand-success;
 	color: white;
+
+	dl {
+		dt {
+			font-size: 1.3em;
+		}
+		dd {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+#contact {
+	.contact-method {
+		text-align: center;
+
+		.title {
+			font-family: @brand-font;
+			font-size: 3em;
+			color: black;
+		}
+		.content-container {
+			color: black;
+		}
+	}
+	.contact-phone {
+		.contact-container {
+			// background-color: @pink;
+
+			.content {
+				font-size: 3em;
+
+				a {
+					color: black;
+				}
+			}
+		}
+	}
+	.contact-form {
+		.contact-container {
+			// background-color: @purple;
+
+			.content {
+				a {
+					font-size: 		1.3em;
+					margin-top: 	.2em;
+					margin-bottom: 	.6em;
+				}
+			}
+		}
+	}
+	.contact-other {
+		.contact-container {
+			// background-color: @darker-blue;
+		}
+
+		.content {
+			font-size: 3em;
+
+			a {
+				color: black;
+			}
+		}
+	}
 }
