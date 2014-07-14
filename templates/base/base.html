@@ -111,7 +111,7 @@
                     <div class="contact-container">
                         <div class="title">Contact Form</div>
                         <div class="content">
-                            <a href="#" class="btn btn-success">Open Contact Form</a>
+                            <a href="#" class="btn btn-success" data-toggle="modal" data-target="#contactModal">Open Contact Form</a>
                         </div>
                     </div>
                 </div>
@@ -131,29 +131,21 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
+                    <div class="footer-col col-md-4 footer-quote">
+                        "Today’s special moments are tomorrow’s memories"
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
                             <li><a href="https://www.facebook.com/TrulyEnchantedMichiana" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
-                            <!-- <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            <li><a href="mailto:trulyenchantedmichiana@gmail.com" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a>
                             </li>
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li> -->
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About Freelance</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                        <h3>Disclaimer</h3>
+                        <p>We are not officially licensed with and are not affiliated with Disney nor are we claiming to be. Our characters are "like" characters and stricly for the purpose of childrens' entertainment.</p>
                     </div>
                 </div>
             </div>
@@ -174,6 +166,27 @@
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="contactModalLabel">Contact Us</h4>
+          </div>
+          <div class="modal-body">
+            <iframe src="https://docs.google.com/forms/d/1vbsKBUu7ZgkNfumr5jFv8vi-muszdx_yUrikyXOx0D8/viewform?embedded=true" width="100%" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <script src="{{ static }}js/jquery-1.10.2.js"></script>
     <script src="{{ static }}js/bootstrap.min.js"></script>
