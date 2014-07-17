@@ -100,7 +100,7 @@ header {
 	background: @brand-success;
 	color: white;
 	.container {
-		padding-top: 100px;
+		padding-top: 80px;
 		padding-bottom: 50px;
 	}
 	img {
@@ -113,12 +113,19 @@ header {
 			font-family: @brand-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
 			// text-transform: uppercase;
 			font-weight: 700;
-			font-size: 2em;
+			font-size: 2.5em;
 		}
 		.skills {
 			font-family: @brand-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
 			font-size: 2em;
 			font-weight: 300;
+		}
+
+		img {
+			// max-width: 50%;
+			// box-shadow: 0 0 15px #000;
+			border: 10px solid #FFF;
+			margin-top: 20px;
 		}
 	}
 }
@@ -126,16 +133,22 @@ header {
 @media(min-width:768px) {
 	header {
 		.container {
-			padding: 160px 0 100px;
+			padding: 140px 0 100px;
 		}
 		.intro-text {
 			.name {
 				font-size: 5em;
+				// margin-bottom: 0;
 			}
 			.skills {
 				font-size: 2.75em;
 			}
+
+			img {
+				max-width: 50%;
+			}
 		}
+
 	}
 }
 
@@ -247,6 +260,7 @@ section.secondary {
 	}
 	.portfolio-preview img {
 		width: 62%;
+		border: 10px solid #FFF;
 	}
 	.character-belle .portfolio-preview {
 		background-color: @gold;

@@ -107,7 +107,7 @@ header {
   color: white;
 }
 header .container {
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 50px;
 }
 header img {
@@ -118,22 +118,29 @@ header .intro-text .name {
   display: block;
   font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 header .intro-text .skills {
   font-family: "Dancing Script", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2em;
   font-weight: 300;
 }
+header .intro-text img {
+  border: 10px solid #FFF;
+  margin-top: 20px;
+}
 @media (min-width: 768px) {
   header .container {
-    padding: 160px 0 100px;
+    padding: 140px 0 100px;
   }
   header .intro-text .name {
     font-size: 5em;
   }
   header .intro-text .skills {
     font-size: 2.75em;
+  }
+  header .intro-text img {
+    max-width: 50%;
   }
 }
 @media (min-width: 768px) {
@@ -230,6 +237,7 @@ section.secondary {
 }
 #characters .portfolio-preview img {
   width: 62%;
+  border: 10px solid #FFF;
 }
 #characters .character-belle .portfolio-preview {
   background-color: #e8b962;
