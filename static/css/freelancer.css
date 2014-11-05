@@ -242,17 +242,20 @@ section.secondary {
 #characters .character-beauty .portfolio-preview {
   background-color: #e8b962;
 }
-#characters .character-mermaid .portfolio-preview {
+#characters .character-mermaid-pink .portfolio-preview {
   background-color: #b56586;
 }
-#characters .character-mermaid .portfolio-preview img {
+#characters .character-mermaid-pink .portfolio-preview img {
   width: 53.45%;
+}
+#characters .character-mermaid-town .portfolio-preview {
+  background-color: #99CCFF;
 }
 #characters .character-snow .portfolio-preview {
   background-color: #33CCFF;
 }
-#characters .character-snow .portfolio-preview img {
-  width: 93%;
+#characters .character-fairest .portfolio-preview {
+  background-color: #DA4747;
 }
 #characters .character-enchanting .portfolio-preview {
   background-color: #FF99CC;
