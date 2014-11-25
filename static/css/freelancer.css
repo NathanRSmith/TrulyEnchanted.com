@@ -56,6 +56,11 @@ h6 {
 .spacer150 {
   margin-top: 150px;
 }
+.new-item {
+  font-size: 0.5em;
+  vertical-align: top;
+  color: blue;
+}
 hr.star-light,
 hr.star-primary,
 hr.star-secondary {
